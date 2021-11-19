@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Puzzle
+comment1.params=
+comment1.target=Puzzle()
+comment2.params=
+comment2.target=java.lang.String\ getWord()
+comment3.params=
+comment3.target=boolean\ isUnsolved()
+comment4.params=
+comment4.target=void\ show()
+comment5.params=str
+comment5.target=boolean\ makeGuess(java.lang.String)
+comment5.text=\r\n\ The\ method\ called\ when\ making\ guesses.\r\n\ @param\ String\ str\ The\ guessed\ letter.\r\n\ @return\ Whether\ or\ not\ the\ guessed\ letter\ was\ in\ the\ word.\r\n
+numComments=6
