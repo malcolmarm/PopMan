@@ -10,9 +10,10 @@ public class Puzzle
     private String output; 
     private String guesses;
     private boolean firstGuess;
-
+    
+    //Constructor
     public Puzzle() {
-        ans = "HALBERD"; 
+        ans = "BRAVE"; 
         output = "";
         for (int i = 0; i < ans.length(); i++) {
             output += "_ ";
@@ -20,11 +21,19 @@ public class Puzzle
         guesses = "";
         firstGuess = true;
     }
-
+    
+    /**
+     * Returns the word.
+     * @return The word
+     */
     public String getWord() {
         return ans;
     }
-
+    
+    /**
+     * Checks if the puzzle has been solved.
+     * @return Whether or not the puzzle is still unsolved
+     */
     public boolean isUnsolved() {
         boolean unsolved = false;
         for (int i = 0; i < output .length(); i += 2) {
@@ -34,7 +43,10 @@ public class Puzzle
         }
         return unsolved;
     }
-
+    
+    /**
+     * The method that displays the puzzle info.
+     */
     public void show() {
         System.out.println("Puzzle: " + output);
         System.out.println("Guesses: " + guesses);
